@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Kanit', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-kanit {
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.7s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.17s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
